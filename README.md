@@ -10,4 +10,4 @@ X-win32
 Xming 
 MobaXterm
 VcXsrv(這次專題使用)
-
+# 安裝方式
