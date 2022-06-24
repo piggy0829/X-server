@@ -27,3 +27,48 @@ VcXsrv(這次專題使用)
 https://sourceforge.net/projects/vcxsrv/
 
 # 桌面配置
+
+執行安裝 X Server 套件
+
+        sudo apt-get install x11-apps
+
+
+建立一個.bash_login並輸入以下內容
+
+        # For WSL2
+        export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
+        export LIBGL_ALWAYS_INDIRECT=1
+        
+![image](https://user-images.githubusercontent.com/106713894/175459180-2d077231-2e87-4a19-bb2c-ada58adaeff4.png)
+
+# 執行安裝 xfce4 桌面
+        sudo apt-get install xfce4-terminal
+        sudo apt-get install xfce4
+![image](https://user-images.githubusercontent.com/106713894/175459494-411e932c-97e5-476b-b45a-277b33b1a219.png)
+
+Display number 設置為0
+
+
+跑完出現以下視窗即可
+
+![image](https://user-images.githubusercontent.com/106713894/175459654-dc24c4f5-f9f6-42d3-bbe4-2ce7748896f3.png)
+
+在Ubuntu 20.04 LTS終端機啟動X Server，輸入指令
+        
+        startxfce4
+        
+ ![image](https://user-images.githubusercontent.com/106713894/175459798-44c6930a-25c8-49ae-b32d-ad1faa18e9be.png)
+
+
+出現此畫面即完成
+
+![image](https://user-images.githubusercontent.com/106713894/175460022-aa8d8423-de20-4f4f-a8c9-9ab52bbc5958.png)
+
+
+# 參考資料
+
+https://ossf.denny.one/en/foss-programs/9265-xserver.html
+
+https://blog.xuite.net/rockmansyz/twblog/115534608-Ubuntu++Server+%E5%AE%89%E8%A3%9D+Gnome+X-Windows+%E7%9A%84%E6%96%B9%E6%B3%95
+
+https://zoomadmin.com/HowToInstall/UbuntuPackage/x-window-system
