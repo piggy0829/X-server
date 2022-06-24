@@ -11,3 +11,19 @@ Xming
 MobaXterm
 VcXsrv(這次專題使用)
 # 安裝方式
+設定使用WSL2為預設使用版本
+
+    wsl --set-default-version 2
+    
+    
+    
+需要去控制台—>程式和功能—>開啟或關Windows功能–>勾選Windows子系統Linux版與虛擬機器平台
+
+![image](https://user-images.githubusercontent.com/106713894/175457778-88ab5809-b754-4bdb-8d64-b5925f790a85.png)
+
+
+下載X server連線工具，使用VcXsrv
+
+https://sourceforge.net/projects/vcxsrv/
+
+# 桌面配置
